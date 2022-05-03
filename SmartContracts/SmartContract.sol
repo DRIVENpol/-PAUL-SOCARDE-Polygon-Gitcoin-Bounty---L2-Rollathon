@@ -1,7 +1,3 @@
-//  TODO: 
-// Mint the nft for creators in the factory sc [X]
-// Allow user to create his own NFTs to reward donors []
-
 //SPDX-License-Identifier: MIT
 
 // Imports
