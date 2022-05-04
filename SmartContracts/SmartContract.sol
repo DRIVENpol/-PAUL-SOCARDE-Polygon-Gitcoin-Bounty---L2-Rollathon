@@ -221,8 +221,8 @@ function donateEtherToVideo(uint256 _videoId, uint256 _amount) public payable {
     require(msg.value == _amount);
     uint256 option;
 
-    if(msg.value < 10 ether) {
-        if(msg.value < 5 ether) {
+    if(msg.value < 1000 ether) {
+        if(msg.value < 500 ether) {
             option = 1;
         } else {
             option = 2;
