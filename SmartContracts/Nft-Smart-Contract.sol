@@ -54,21 +54,5 @@ contract NftScCreators is ERC721URIStorage, Ownable {
 
         return newNftTokenId;
     }
-
-    function setUri100Claps(string memory _newUri) public onlyOwner {
-        uri100Claps = _newUri;
-    }
-
-     function setUri1000Claps(string memory _newUri) public onlyOwner {
-        uri1000Claps = _newUri;
-    }
-
-     function setUri5000Claps(string memory _newUri) public onlyOwner {
-        uri5000Claps = _newUri;
-    }
-
-    function setMinter(address _newMinter) public onlyOwner {
-        minter = _newMinter;
-    }
 }
 
