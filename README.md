@@ -12,7 +12,9 @@ Other functions:
 
 STATUS:
 > Working on the web interface
+
 > Link: https://github.com/DRIVENpol/PAUL-SOCARDE-Polygon-Gitcoin-Bounty-L2-Rollathon-WebInterfaceNext
+
 > Netlify Link: 
 
 TO DO List:
