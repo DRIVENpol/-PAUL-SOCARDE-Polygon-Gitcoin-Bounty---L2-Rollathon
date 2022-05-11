@@ -20,4 +20,5 @@ Vercel Link: https://paul-socarde-polygon-gitcoin-bounty-l2-rollathon-3ifcbas53.
 TO DO List:
 - Smart Contracts [x]
 - Web Interface []
+- Connect the interface with the smart contract []
 - Deploy on Vercel [x]
