@@ -11,11 +11,11 @@ Other functions:
 - Creators receive a custom NFT if they reach 100, 1000 and 5000 claps
 
 STATUS:
-> Working on the web interface
+Working on the web interface
 
-> Link: https://github.com/DRIVENpol/PAUL-SOCARDE-Polygon-Gitcoin-Bounty-L2-Rollathon-WebInterfaceNext
+Link: https://github.com/DRIVENpol/PAUL-SOCARDE-Polygon-Gitcoin-Bounty-L2-Rollathon-WebInterfaceNext
 
-> Netlify Link: 
+Netlify Link: 
 
 TO DO List:
 - Smart Contracts [x]
