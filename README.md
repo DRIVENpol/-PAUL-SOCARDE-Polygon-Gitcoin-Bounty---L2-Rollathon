@@ -15,9 +15,9 @@ Working on the web interface
 
 Link: https://github.com/DRIVENpol/PAUL-SOCARDE-Polygon-Gitcoin-Bounty-L2-Rollathon-WebInterfaceNext
 
-Netlify Link: 
+Vercel Link: https://paul-socarde-polygon-gitcoin-bounty-l2-rollathon-3ifcbas53.vercel.app/
 
 TO DO List:
 - Smart Contracts [x]
 - Web Interface []
-- Deploy on Netlify []
+- Deploy on Vercel []
