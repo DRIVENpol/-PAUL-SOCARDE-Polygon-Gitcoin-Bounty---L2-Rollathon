@@ -254,6 +254,15 @@ function donateEtherToVideo(uint256 _videoId, uint256 _amount) public payable {
     emit Donate(msg.sender, _videoId, _amount);
   }
 
+  // Getters
+  function getSummaryOfProfile() public view returns(
+      string memory,
+      string memory,
+      uint256,
+      uint256) {
+          return(username, profilePicture, claps, noVideos);
+      }
+
 receive() external payable {}
 
 }
