@@ -40,10 +40,13 @@ contract MainFactory is Ownable {
         _;
     }
 
-    function createProfile() public {
+    function createProfile(string memory _category, string memory _profilePic, string memory _username) public {
         address newProfile = address(new userProfile(
             msg.sender,
-            address(this)
+            address(this),
+            _profilePic,
+            _category,
+            _username
         ));
 
         addressToProfile[msg.sender] = newProfile;
@@ -89,6 +92,9 @@ contract userProfile {
 
     MainFactory public factory;
 
+    string public profilePicture;
+    string public category;
+
     uint256 public noVideos;
     uint256 public claps;
     uint256 public ethDonations;
@@ -130,9 +136,12 @@ event Donate(address who, uint256 _id, uint256 _amount);
 event Clap(address who, uint256 _id);
 
 // Constructor
-constructor( address _creator, address _factory) {
+constructor( address _creator, address _factory, string memory _profilePicture, string memory _category, string memory _username) {
     creator = _creator;
     factory = MainFactory(_factory);
+    profilePicture = _profilePicture;
+    category = _category;
+    setUsername(_username);
 }
 
 // Modifier
@@ -183,7 +192,7 @@ myNftCollection = NftSc(newNftCollection);
 }
 
 // Set an username. This action can be called only once
-function setUsername(string memory _username) public onlyCreator {
+function setUsername(string memory _username) private {
     require(usernameExist == 1);
     usernameOfCreator[msg.sender] = _username;
     usernameExist = 2;
