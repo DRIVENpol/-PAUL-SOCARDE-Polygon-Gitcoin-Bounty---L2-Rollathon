@@ -28,7 +28,10 @@ contract MainFactory is Ownable {
 
     event NewProfile(
         address creator,
-        address factory
+        address factory,
+        string profilePicture,
+        string category,
+        string usenrame
     );
 
     constructor(NftScCreators _nftRewardCreators) {
@@ -58,7 +61,7 @@ contract MainFactory is Ownable {
 
         isMinter[newProfile] = 1;
 
-        emit NewProfile(msg.sender, address(this));
+        emit NewProfile(msg.sender, address(this), _profilePic, _category, _username);
     }
 
     function mintNftForCreator(address _to, uint256 _option) external onlyMinter() {
