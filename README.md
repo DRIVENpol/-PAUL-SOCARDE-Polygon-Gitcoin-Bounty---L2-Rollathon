@@ -13,11 +13,11 @@ Other functions:
 STATUS:
 Working on the web interface
 
-Link: https://github.com/DRIVENpol/PAUL-SOCARDE-Polygon-Gitcoin-Bounty-L2-Rollathon-Web3
-Vercel Link: https://luxury-klepon-6f957f.netlify.app/
+Link: https://github.com/DRIVENpol/NextApp-Polygon-Gitcoin-Bounty-L2-Rollathon
+Vercel Link: https://next-app-polygon-gitcoin-bounty-l2-rollathon-int.vercel.app/
 
 TO DO List:
 - Smart Contracts [x]
 - Web Interface [x]
 - Connect the interface with the smart contract []
-- Deploy on Netlify [x]
+- Deploy on Vercel [x]
